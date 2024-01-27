@@ -9,6 +9,7 @@ public class disappear : MonoBehaviour
 {
     bool hover = false;
     bool up = false;
+    bool active = true;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class disappear : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 gameObject.SetActive(false);
+                active = false;
             }
         }
     }
@@ -46,4 +48,6 @@ public class disappear : MonoBehaviour
             up = false;
         }
     }
+
+    public bool getActive() { return active;}
 }
