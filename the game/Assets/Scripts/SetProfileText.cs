@@ -10,9 +10,6 @@ public class SetProfileText : MonoBehaviour
     int KingNumber = 1;
     public Text KingName;
     public Text Likes;
-    string Like1;
-    string Like2;
-    string Like3;
 
     // Start is called before the first frame update
     void Start()
@@ -20,41 +17,40 @@ public class SetProfileText : MonoBehaviour
         if (KingNumber == 1)
         {
             
-            KingName.text = ("King of Hearts");
+            KingName.text = ("Red King of Hearts");
             KingName.color = Color.red;
+            Likes.text = ("Likes: " + "Music " + "Cats " + "Jewelry " + "Agriculture ");
 
         }
         else if (KingNumber == 2)
         {
-            KingName.text = ("King of Diamonds");
+            KingName.text = ("Red King of Diamonds");
             KingName.color = Color.red;
+            Likes.text = ("Likes: "+"Fishing " 
+                + "Dogs " 
+                + "Religion " 
+                + "Royal Family ");
         }
         else if (KingNumber == 3)
         {
-            KingName.text = ("King of Spades");
+            KingName.text = (" Black King of Spades");
             KingName.color = Color.black;
+            Likes.text = ("Likes: " + "Eating " 
+                + "Weapons of War " 
+                + "Hunting " 
+                + "War ");
         }
         else
         {
-            KingName.text = ("King of Clubs");
+            KingName.text = ("Black King of Clubs");
             KingName.color = Color.black;
+            Likes.text = ("Likes: " + "Money "
+                + "Wine " 
+                + "Sightseeing " 
+                + "Higher Class ");
 
         }
 
-        if (Random.Range(1,3) == 1)
-        {
-            Like1 = "sports";
-            Like2 = "hunting";
-            Like3 = "Politics";
-        }
-        else
-        {
-            Like1 = "bull";
-            Like2 = "null";
-            Like3 = "pull";
-        }
-
-        Likes.text = (Like1 + Like2 + Like3);
     }
 
     // Update is called once per frame
