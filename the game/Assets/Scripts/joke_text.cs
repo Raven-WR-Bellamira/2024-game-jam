@@ -76,7 +76,7 @@ public class joke : MonoBehaviour
         catch
         {
             Debug.Log("Error loading m_text -> "+name);
-            m_text.text = "Error";
+            //m_text.text = "Error";
         }
     }
 
